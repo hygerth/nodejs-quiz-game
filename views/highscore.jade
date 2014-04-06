@@ -1,0 +1,14 @@
+extends layout
+block head	
+	
+block content
+	div#highscore
+		h1 Highscore board
+		div#hslist
+			each game in hs
+				ul#aGame
+					li #{fixDate(game.gameDate)}
+					li #{game._playerOneId.username}
+					li #{game.playerOneScore}
+					li #{game.playerTwoScore}
+					li #{game._playerTwoId.username}

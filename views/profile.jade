@@ -1,0 +1,29 @@
+extends layout
+block head	
+	
+block content
+	div#profile
+		h1 Profile
+		div.tabs
+			ul
+				li
+					a(href='/logout') Logout
+				li
+					a(href='/client') Join game
+
+
+		div#info
+			p.username <span>Username:</span> #{user.username}
+			p.password <span>Password:</span> #{user.password}
+			p.id <span>ID:</span> #{user._id}
+		
+		div#myHS
+			p Your latest rounds
+			each game in hs
+				ul#myGame
+					li #{game._playerOneId.username} :
+					li #{game.playerOneScore}
+					li #{game._playerTwoId.username} :
+					li #{game.playerTwoScore}
+					li #{fixDate(game.gameDate)}
+		

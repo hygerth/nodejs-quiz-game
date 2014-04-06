@@ -1,0 +1,21 @@
+extends layout
+block head	
+	
+block content
+	div#form-box
+		ul.tabs
+			li
+				a(href='/login') Login
+			li
+				a(href='/register', class='active') Register
+		div.form-action
+			h1 Register
+			p Register an account to join the game
+			form(action='register', method='post')
+				ul
+					li
+						input(type='text', name='username', placeholder='Username')
+					li
+						input(type='password', name='password', placeholder='Password')
+					li
+						input(type='submit', value='Register')

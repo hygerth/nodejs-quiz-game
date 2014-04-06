@@ -1,0 +1,475 @@
+body {
+	font-family:  Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: rgb(255, 255, 255); 
+	font-size: 80%;
+	font-weight: normal;
+	background: rgb(231, 76, 60);
+	width: 100%;
+	height: 100%;
+}
+
+
+/* links */
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	outline: none;
+
+}
+
+a:hover {
+	background: rgb(192, 57, 43);
+	color: rgb(255,255,255) !important;
+}
+
+/* LAYOUT */
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+
+h1 {
+	font-size: 4.5em;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding:4px;
+}
+
+/* INDEX */
+
+#index {
+	background: rgb(231, 76, 60);
+	width: 100%;
+	max-width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+#index a {
+	float: left;
+	width: 90%;
+	color: rgb(255, 255, 255);
+	font-size: 2.5em;
+	border: .4em solid;
+	border-color: rgb(192, 57, 43);
+	padding: .2em 0;
+	margin: .5em 0;
+	
+
+	-webkit-background-clip: padding-box; 
+	-moz-background-clip: padding; 
+	background-clip: padding-box;
+	
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+/* HIGHSCORE */
+
+#highscore {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#hslist {
+	border-top: 1px solid;
+}
+
+#aGame {
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+#aGame li {
+	display: inline-block;
+	font-size: 1em;
+	width: 14%;
+	line-height: 2.2em;
+	margin-left: 1.5em;
+}
+
+#aGame li:first-child {
+	margin-left: .2em;
+	border-right: 1px solid;
+}
+
+/* LOGIN */
+
+#form-box {
+	background: rgb(231, 76, 60);
+	margin: 0 auto;
+	padding-bottom: 10em;
+	width: 100%;
+	max-width: 600px;
+	height: 100%;
+	border:  1px solid rgb(192, 57, 43);
+}
+
+.tabs {
+	/*background: rgb(192, 57, 43);*/
+	height: 4em;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin-bottom: 2em;
+}
+
+.tabs li {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	max-width: 300px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.tabs a {
+	background: rgb(192, 57, 43);
+	float: left;
+	width: 100%;
+	max-width: 300px;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-size: 1.3em;
+	padding: .95em 0em;
+	border: none;
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+.tabs a:hover, .tabs a.active {
+	background: rgb(231, 76, 60);
+}
+
+.form-action {
+	padding: 0 1.9em;
+	position: relative;
+	text-align: left;
+	font-weight: 100;
+}
+
+.form-action h1 {
+	color: rgb(255,255,255);
+	text-align: left;
+	font-size: 3.5em !important;
+	font-weight: 100 !important;
+	padding: 0 !important;
+	padding-bottom: .3em !important;
+	margin: 0;
+}
+
+.form-action p {
+	color: rgb(255,255,255);
+	font-size: 1.5em;
+	padding-bottom: .8em;
+	line-height: 2.1em;
+}
+
+.form-action form {
+	padding-right: 1.8em !important;
+}
+
+.form-action input[type=text], .form-action input[type=password], .form-action input[type=submit] {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.form-action input[type=text], .form-action input[type=password] {
+	width: 100%;
+	height: 3.4em;
+	margin-bottom: .9em;
+	background: rgb(255,255,255);
+	border: none;
+	outline: none;
+	color: rgb(231, 76, 60);
+}
+
+.form-action li input[type=submit] {
+	border: none;
+	outline: none;
+	display: block;
+	background: rgb(192, 57, 43);
+	height: 3.5em;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	cursor: pointer;
+	-webkit-background-clip: padding-box; 
+	-moz-background-clip: padding; 
+	background-clip: padding-box;
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+.form-action input[type=submit]:hover {
+	background: rgb(231, 76, 60);
+	border: 1px solid rgb(192, 57, 43);
+}
+
+.form-action ::-webkit-input-placeholder {
+  color: rgb(231, 76, 60);
+}
+.form-action :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(231, 76, 60);
+}
+.form-action ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(231, 76, 60);
+}
+.form-action :-ms-input-placeholder {
+  color: rgb(231, 76, 60);
+}
+
+
+/* PROFILE */
+
+#profile {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	color: rgb(255,255,255);
+}
+
+#profile h1 {
+	text-align: center;
+}
+
+#profile .tabs {
+	width: 100%;
+	height: 4em;
+	margin: 0 auto;
+	text-align: center;
+	background: rgb(231, 76, 60);
+}
+
+#profile .tabs li {
+	width: 50%;
+	max-width: 300px;
+}
+
+#profile .tabs a {
+	width: 100%;
+	padding-left: .31em;
+	padding-right: .31em;
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+#profile .tabs a:hover {
+	background: rgb(231, 76, 60);
+	border: 1px solid rgb(192, 57, 43);
+}
+
+#profile #info {
+	background: rgb(192, 57, 43);
+	width: 100%;
+	margin: 1em auto;
+	padding: .5em;
+	font-size: 1em;
+}
+
+#profile #info span {
+	font-weight: bold;
+}
+
+#profile #myHS {
+	background: rgb(192, 57, 43);
+	width: 100%;
+	margin: 1em auto;
+	padding: .5em;
+}
+
+#profile #myHS p {
+	font-size: 1.9em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#profile #myHS #myGame {
+	width: 100%;
+}
+
+#profile #myHS #myGame li {
+	display: inline-block;
+	text-align: center;
+	width: 19%;
+	font-size: 1em;
+	padding: .1em;
+}
+
+
+/* CLIENT */
+
+#client {
+	width: 100%;
+	max-width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#alternatives {
+	width: 100%;
+	height: 100%;
+}
+
+#alternatives li {
+	height: 120px;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid rgb(231, 76, 60);
+}
+
+#alternatives #btn {
+	width: 100%;
+	height: 100%;
+	background: rgb(192, 57, 43);
+	font-size: 2.5em;
+	color: rgb(255,255,255);
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* HOST */
+
+#host {
+	text-align: center;
+}
+
+#waitingForPlayers {
+	font-size: 5em;
+	margin-top: 1em;
+}
+
+#playerJoinAt {
+	font-size: 5em;
+}
+
+#gameCode {
+	font-size: 20em;
+}
+
+#scoreboard {
+	width: 100%;
+	font-size: 5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#scoreboard .playerOne {
+	float: left;
+}
+
+#scoreboard .playerTwo {
+	float: right;
+}
+
+#scoreboard .score, #scoreboard .name {
+	float: left;
+}
+
+#scoreboard .score {
+	padding: .5em 1em;
+}
+
+#scoreboard .name {
+	padding: .5em 1em;
+}
+
+#question {
+	width: 95%;
+	float: left;
+	margin: 2em 4em;
+}
+
+#question h1 {
+	font-size: 8em;
+}
+
+#question span {
+	font-size: 25em;
+}
+
+#log p {
+	float: left;
+	margin: 0 auto;
+	width: 40em;
+	height: 4em;
+	font-size: 3em;
+}
+
+.correct {
+	background: rgb(255,255,255);
+	color: rgb(231, 76, 60);
+	padding: .5em;
+	border-radius: .4em;
+}
+
+.wrong {
+	background: rgb(192, 57, 43);
+	padding: .5em;
+	border-radius: .4em;
+}
+
+#rematch {
+	outline: none;
+	border: none;
+	background: rgb(255,255,255);
+	padding: .5em;
+	border-radius: .4em;
+	width: 90%;
+	height: 4em;
+	margin: 0 auto;
+	font-size: 5em;
+	color: rgb(231, 76, 60);
+	cursor: pointer;
+}
+
+
+/* misc. 
+--------------------------------------------- */
+
+hr, .hide {
+	display: none;
+}
+
+a img {
+	border: none;
+}
+
+
+/* self-clear floats */
+
+.group:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}

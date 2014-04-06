@@ -1,0 +1,25 @@
+extends layout
+block head	
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+	script(src='/socket.io/socket.io.js')
+	script(src='js/client.js')
+
+block content
+	div#client
+		div.screen
+			div#form-box
+				div.tabs
+					ul
+						li
+							a(href='/client', class='active') Join Game
+						li
+							a(href='/profile') Profile
+				div.form-action
+					h1 Join a game
+					ul
+						li
+							input(type='text', id='idtest', placeholder='Enter game ID here')
+						li
+							input(type='submit', id='joinGame', value='Join Game')
+
+		
