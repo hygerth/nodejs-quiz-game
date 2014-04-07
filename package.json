@@ -1,6 +1,6 @@
 {
   "name": "node-quiz-game",
-  "version": "0.1",
+  "version": "0.1.0",
   "private":  true,
   "author": "https://github.com/hygerth/",
   "main": "server.js",
